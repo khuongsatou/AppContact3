@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/background_border_line"
+    >
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cvItem"
+        android:layout_width="match_parent"
+
+        app:cardBackgroundColor="@color/cardview_shadow_end_color"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tvNameContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name Contact"
+                android:textSize="20sp"
+                android:textColor="#B5EB1C1C"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_below="@+id/tvNameContact"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tvNumberPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0356241963"
+                android:textSize="20sp"
+                android:textColor="#8BEB1C1C"
+                android:textStyle="bold"
+                />
+
+            <CheckBox
+                android:id="@+id/cbDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvNameContact"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="20dp"
+                android:paddingBottom="10dp"
+                android:layout_marginRight="10dp"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>
